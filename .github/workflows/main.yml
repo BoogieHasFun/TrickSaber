@@ -89,7 +89,7 @@ jobs:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: cargo-build.yml
         name: linux-qpm-rust
-        path: 
+        path: qpm-rust
         repo: RedBrumbler/QuestPackageManager-Rust
       
     # collect all dependencies, I assume for reading back what was used to build a specific .so
