@@ -95,8 +95,8 @@ jobs:
     # collect all dependencies, I assume for reading back what was used to build a specific .so
     - name: QPM Collect
       run: |
-        chmod +x ./QPM/QPM
-        ./QPM/QPM collect
+        chmod +x ./qpm-rust
+        ./qpm-rust collect
 
     # unpack the cached QPM dependencies (packages)
     - name: QPM Dependencies Cache
@@ -115,7 +115,7 @@ jobs:
     # run qpm restore
     - name: QPM Restore
 #       if: steps.cache-qpm-deps.outputs.cache-hit != 'true'
-      run: ./QPM/QPM restore
+      run: ./apm-rust restore
     
     #list what files are in the extern folder and in qpm temp folder
     - name: List Post Restore
