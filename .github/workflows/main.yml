@@ -93,10 +93,10 @@ jobs:
         repo: RedBrumbler/QuestPackageManager-Rust
       
     # collect all dependencies, I assume for reading back what was used to build a specific .so
-    - name: QPM Collect
-      run: |
-        chmod +x ./qpm-rust
-        ./qpm-rust collect
+  #  - name: QPM Collect
+   #   run: |
+    #    chmod +x ./qpm-rust
+      #  ./qpm-rust collect
 
     # unpack the cached QPM dependencies (packages)
     - name: QPM Dependencies Cache
