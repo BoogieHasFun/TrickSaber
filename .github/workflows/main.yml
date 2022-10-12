@@ -115,7 +115,7 @@ jobs:
     # run qpm restore
     - name: QPM Restore
 #       if: steps.cache-qpm-deps.outputs.cache-hit != 'true'
-      run: ./apm-rust restore
+      run: ./qpm-rust restore
     
     #list what files are in the extern folder and in qpm temp folder
     - name: List Post Restore
